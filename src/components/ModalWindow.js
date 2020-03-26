@@ -9,7 +9,9 @@ const ModalWindow = (props) => {
         className='ModalWindow'
         style={{ display: props.isOpen ? 'flex' : 'none' }}
       >
-        <div className='ModalWindow-container'>
+        <div
+          className='ModalWindow-container'
+        >
           {
             props.children
           }

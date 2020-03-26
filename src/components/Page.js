@@ -61,6 +61,7 @@ function Page(props) {
                   openRedactForm={openRedactForm}
                   openDeleteForm={openDeleteForm}
                   item={item}
+                  key={item._id}
                 />
               );
             })
