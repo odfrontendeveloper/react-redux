@@ -52,8 +52,6 @@ export async function addItem(data, changeTitle, changeDescription) {
     store.dispatch({ type: 'CLOSE_LOAD' });
     alert('Произошла ошибка');
   }).then((responce) => {
-    console.log(responce);
-    
     if (responce.status >= 200 && responce.status < 300) {
       changeTitle('');
       changeDescription('');
