@@ -1,0 +1,38 @@
+.ImageLoad {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000000, $alpha: 0.45);
+
+  &-image {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.ModalWindow {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba($color: #000000, $alpha: 0.45);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

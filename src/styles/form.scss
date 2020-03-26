@@ -1,0 +1,71 @@
+.form {
+  position: absolute;
+  z-index: 40;
+  border-radius: 12px;
+  width: 320px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 30px rgb(46, 46, 46);
+
+  &-head {
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: hsl(216, 100%, 50%);
+  }
+
+  &-label {
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+  }
+
+  &-input,
+  &-textarea {
+    background-color: white;
+    box-shadow: inset 0px 0px 4px 0.3px #c0c0c0;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px 15px 15px 15px;
+    padding: 5px 5px 5px 5px;
+    max-width: auto;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-result-validate {
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 15px 5px 15px;
+  }
+
+  &-btn-container {
+    width: 100%;
+    border-top: 1px solid #c0c0c0;
+    display: flex;
+
+    &-btn {
+      padding: 10px 5px 10px 5px;
+      width: 100%;
+      border: 0;
+      border-right: 1px solid #c0c0c0;
+      background: 0;
+
+      &:hover {
+        background-color: rgb(223, 223, 223);
+      }
+
+      &:first-child {
+        border-bottom-left-radius: 12px;
+      }
+
+      &:last-child {
+        border: 0;
+        border-bottom-right-radius: 12px;
+      }
+    }
+  }
+}
